@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
-
+use main;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let file = File::open("input.txt")?;
     let mut reader = BufReader::new(file);
